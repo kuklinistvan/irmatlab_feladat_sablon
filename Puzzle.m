@@ -1,3 +1,4 @@
+%% Elvileg ebbe a fájlba nem kellene belenyúlni.
 classdef Puzzle < handle
     properties
         map
@@ -72,6 +73,21 @@ classdef Puzzle < handle
                     newPos(1)=newPos(1)+1;
             end
             wasSuccessful = obj.setNewPosition(newPos);
+            
+            disp('This is what I see now:');
+            disp(obj.lookAround());
+        end
+        
+        function r = lookAround(obj)
+            col = obj.currentPos(1);
+            row = obj.currentPos(2);
+            m = obj.map;
+            
+            r = [
+                m(row-1, col-1) m(row-1, col) m(row-1, col+1);
+                m(row, col-1) m(row, col) m(row, col+1);
+                m(row+1, col-1) m(row+1, col) m(row+1, col+1);
+            ];
         end
     end
 end
