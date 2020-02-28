@@ -4,8 +4,11 @@ TICK_TIME = 0.4;
 %% BEÁLLÍTÁSOK VÉGE
 
 %% Inicializálás, görgesd át...
+
 addpath('./Fx'); 
+
 puzzle = Puzzle(MAP_PATH);
+
 while(~puzzle.targetReached())
     Step(puzzle);
     puzzle.plotMap()
