@@ -1,6 +1,6 @@
 # Tisztább Robotpélda kódbázis
 
-![mém](https://github.com/irmatlab_feladat_sablon/meme.jpg)
+![mém](https://raw.githubusercontent.com/kuklinistvan/irmatlab_feladat_sablon/master/meme.jpg)
 
 Azért, hogy könnyebb legyen a lényegre koncentrálni, elkezdtem kicsit refaktorálgatni.
 
